@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Добро пожаловать в нашу пекарню! Мы предлагаем самые свежие и вкусные хлебобулочные изделия, приготовленные с любовью и заботой. Узнайте больше о наших традициях и новинках!"
+		/>
+		<meta
+			name="keywords"
+			content="пекарня, хлеб пекарня, пекарня сайт, пекарня официальный, пекарня 1, пекарня ул, пекарня хлебница, адреса пекарен, буханка пекарня, кафе пекарня, свежий хлеб, булочки, выпечка, десерты, домашняя выпечка, традиционные рецепты, вкусные хлебобулочные изделия"
+		/>
+		<link rel="stylesheet" href="./CSS/style_nav.css" />
+		<link rel="stylesheet" href="./CSS/style_main.css" />
+		<link rel="stylesheet" href="./CSS/simple-adaptive-slider.min.css" />
+		<link rel="stylesheet" href="./CSS/setting_slider.css" />
+		<link rel="icon" href="./img/favicon-16x16.png" type="image/png" />
+		<script defer src="./JS/main.js"></script>
+		<script defer src="./JS/simple-adaptive-slider.js"></script>
+		<script defer src="./JS/slider-settings.js"></script>
+		<title>Task-15</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<nav class="menu">
+					<ul class="nav">
+						<li class="menu__item">
+							<a id="nav__logo" href="#">
+								<img id="logo" src="./img/logo.jpg" alt="logo" />
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="nav-links" href="#main">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a class="nav-links" href="#innovations">Наши новинки</a>
+						</li>
+						<li class="menu__item">
+							<a class="nav-links" href="#about">О нас</a>
+						</li>
+					</ul>
+				</nav>
+				<button id="burger" class="header__burger_btn">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</header>
+		<main class="main no-header">
+			<section id="main" class="first__page">
+				<h1>Наши бестселлеры</h1>
+				<div class="widgets">
+					<figure id="widget-1" class="widget">
+						<img class="slide-left" src="./img/coffee.jpg" alt="Латте" />
+						<figcaption class="text-overlay">Латте</figcaption>
+					</figure>
+					<figure id="widget-2" class="widget">
+						<img src="./img/panetone.jpg" alt="Панетоне" />
+						<figcaption class="text-overlay">Панетоне</figcaption>
+					</figure>
+					<figure id="widget-3" class="widget">
+						<img src="./img/maphin.jpg" alt="Мафины" />
+						<figcaption class="text-overlay">Мафины</figcaption>
+					</figure>
+				</div>
+			</section>
+			<section id="innovations" class="second__page">
+				<h2>Наши<br />Новинки</h2>
+				<article id="first__innovations">
+					<img
+						id="img__innovations_1"
+						src="./img/coffee-winter.jpg"
+						alt="Какао с маршмеллоу"
+					/>
+					<div class="text__discription">
+						<h3>Какао с маршмеллоу</h3>
+						<p>
+							Ароматное какао, укутанное в кремовую шапочку тающего маршмеллоу -
+							простой и восхитительный на вкус напиток, что может быть лучше в
+							преддверии нового года.
+						</p>
+					</div>
+				</article>
+				<article id="second__innovations">
+					<img id="img__innovations_2" src="./img/shotllen.png" alt="Штоллен" />
+					<div class="text__discription">
+						<h3>Штоллен</h3>
+						<p>
+							Традиционная немецкая рождественская выпечка из сочного сдобного
+							теста с высоким содержанием пряностей, сухофруктов, орехов и
+							обильно посыпанная сахарной пудрой. Теперь у нас есть такое.
+						</p>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="third__page" id="about">
+				<img class="bakery__img" src="./img/bakery.jpg" alt="Наша пекарня" />
+				<div class="slider">
+					<div class="slider__wrapper">
+						<div class="slider__items">
+							<div class="slider__item">
+								<div class="slider__item_inner">
+									<h3 class="slider__item_title">
+										Добро пожаловать в нашу пекарню!
+									</h3>
+									<p class="slider__items_description">
+										Мы гордимся тем, что предоставляем нашим клиентам самые
+										свежие и вкусные хлебобулочные изделия. Каждый день мы
+										начинаем с выбора лучших ингредиентов и готовим нашу
+										продукцию с любовью и заботой.
+									</p>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__item_inner">
+									<h3 class="slider__item_title">Наши традиции</h3>
+									<p class="slider__items_description">
+										Наша пекарня работает уже более 10 лет, соблюдая традиции и
+										рецепты, которые передаются из поколения в поколение. Мы
+										уверены, что вкус настоящего хлеба должен быть знаком
+										каждому.
+									</p>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__item_inner">
+									<h3 class="slider__item_title">Наша команда</h3>
+									<p class="slider__items_description">
+										Наши пекари — это мастера своего дела с многолетним опытом.
+										Каждый из них вкладывает душу в свою работу, чтобы вы могли
+										наслаждаться вкусом настоящей свежей выпечки.
+									</p>
+								</div>
+							</div>
+							<div class="slider__item">
+								<div class="slider__item_inner">
+									<h3 class="slider__item_title">Почему выбирают нас?</h3>
+									<p class="slider__items_description">
+										Наши клиенты ценят нас за высокое качество продукции,
+										дружелюбный сервис и уютную атмосферу. Мы рады каждому гостю
+										и всегда готовы предложить что-то особенное.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a
+						class="slider__control slider__control_prev"
+						href="#"
+						role="button"
+						data-slide="prev"
+					></a>
+					<a
+						class="slider__control slider__control_next"
+						href="#"
+						role="button"
+						data-slide="next"
+					></a>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

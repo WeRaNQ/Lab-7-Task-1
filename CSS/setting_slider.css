@@ -1,0 +1,65 @@
+.slider {
+	max-width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.slider__items {
+	counter-reset: slide;
+}
+.slider__item {
+	height: 100vh;
+	position: relative;
+	counter-increment: slide;
+}
+.slider__item::after {
+	content: counter(slide);
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #453430;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.slider__item:nth-child(1) {
+	background-color: #faf2ea;
+}
+.slider__item:nth-child(2) {
+	background-color: #faf2ea;
+}
+.slider__item:nth-child(3) {
+	background-color: #faf2ea;
+}
+.slider__item:nth-child(4) {
+	background-color: #faf2ea;
+}
+.slider__item_inner {
+	font-family: URL(../fonts/Mont-ExtraLightDEMO.otf);
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	top: 20px;
+	bottom: 40px;
+	font-size: 32px;
+	overflow: hidden;
+	color: #453430;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.slider__item_title {
+	font-size: 2rem;
+}
+@media screen and (max-width: 992px) {
+	.slider__item {
+		height: 50vh;
+	}
+
+	.slider__item_inner {
+		font-size: 17px;
+	}
+}
